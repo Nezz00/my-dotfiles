@@ -1,0 +1,8 @@
+show=drun
+term=kitty
+prompt=Buscar
+insensitive=true
+width=500
+lines=10
+location=center
+allow_images=false
