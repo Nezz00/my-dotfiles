@@ -1,7 +1,8 @@
+
 {
   "layer": "top",
   "position": "top",
-  "modules-left": ["hyprland/workspaces"],
+  "modules-left": ["custom/launcher", "hyprland/workspaces"],
   "modules-center": ["clock", "mpd"],
   "modules-right": ["bluetooth", "network", "pulseaudio", "battery", "custom/power"],
 
@@ -15,6 +16,11 @@
     "persistent-workspaces": {
       "eDP-1": [1, 2, 3, 4, 5]
     }
+  },
+
+  "custom/launcher": {
+    "format": " ",
+    "on-click": "wofi"
   },
 
   "clock": {
@@ -31,24 +37,18 @@
  
   },
 
-  "tray": {
-   "icon-size": 18,
-   "spacing": 10,
-   "show-passive-items": true
- 
-  },
-
   "network": {
-    "format-wifi": "  {essid} ({signalStrength}%)",
+    "format-wifi": "  ({signalStrength}%) {bandwidthDownBits} {bandwidthUpBytes}",
     "format-ethernet": "󰈀  {ifname}",
     "format-disconnected": "󰖪  Desconectado",
-    "on-click": "nm-connection-editor"
+    "on-click": "nm-connection-editor",
+    "interval": 10
 
   }, 
 
   "pulseaudio": {
     "format": "  {volume}%",
-    "format-muted": "  Muted",
+    "format-muted": "󰝟 ",
     "on-click": "pavucontrol"
   },
  

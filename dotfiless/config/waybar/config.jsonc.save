@@ -1,0 +1,502 @@
+{
+  "layer": "top",
+  "position": "top",
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["clock", "mpd"],
+  "modules-right": ["bluetooth", "network", "pulseaudio", "battery", "custom/power"],
+
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "format-icons": { 
+      "active": "",
+      "default": ""   
+    },
+    "persistent-workspaces": {
+      "eDP-1": [1, 2, 3, 4, 5]
+    }
+  },
+
+  "clock": {
+    "timezone": "America/Argentina/Buenos_Aires",
+    "format": "  {:%A | %H:%M}",
+    "tooltip-format": "{:%Y-%m-%d %H:%M:%S}",
+    "interval": 60
+  },
+
+  "bluetooth": {
+    "on-click": "blueman-manager",
+    "format-disabled": "󰂲",
+    "format-enabled": "󰂰"   
+ 
+  },
+
+  "tray": {
+   "icon-size": 18,
+   "spacing": 10,
+   "show-passive-items": true
+ 
+  },
+
+  "network": {
+    "format-wifi": "  {essid} ({signalStrength}%)",
+    "format-ethernet": "󰈀  {ifname}",
+    "format-disconnected": "󰖪  Desconectado",
+    "on-click": "nm-connection-editor"
+
+  }, 
+
+  "pulseaudio": {
+    "format": "  {volume}%",
+    "format-muted": "  Muted",
+    "on-click": "pavucontrol"
+  },
+ 
+  "battery": {
+    "format": "{capacity}% ",
+    "format-charging": "{capacity}% 󰂄",
+    "format-plugged": "{capacity}% 󰂄",
+    "format-alt": "{time} " 
+  },     
+
+  "custom/power": {
+    "format": "
+Cheat Sheet
+
+nf-md-arch
+f08c7
+nf-fa-archway
+ee20
+nf-linux-archlabs
+f31e
+nf-linux-archcraft
+f345
+nf-dev-archlinux
+e732
+nf-linux-archlinux
+f303
+nf-cod-archive
+ea98
+nf-fa-archive
+f187
+nf-md-archive
+f003c
+nf-oct-archive
+f411
+nf-fa-box_archive
+f187
+nf-md-archive_alert
+f14fd
+nf-md-archive_cancel
+f174b
+nf-md-archive_check
+f174d
+nf-md-archive_clock
+f174f
+nf-md-archive_cog
+f1751
+nf-md-archive_edit
+f1753
+nf-md-archive_eye
+f1755
+nf-md-archive_lock
+f1757
+nf-md-archive_marker
+f175b
+nf-md-archive_minus
+f175d
+nf-md-archive_music
+f175f
+nf-md-archive_off
+f1761
+nf-md-archive_outline
+f120e
+nf-md-archive_plus
+f1763
+nf-md-archive_refresh
+f1765
+nf-md-archive_remove
+f1767
+nf-md-archive_search
+f1769
+nf-md-archive_settings
+f176b
+nf-md-archive_star
+f176d
+nf-md-archive_sync
+f176f
+nf-fa-file_archive_o
+f1c6
+nf-md-archive_alert_outline
+f14fe
+nf-md-archive_arrow_down
+f1259
+nf-md-archive_arrow_up
+f125b
+nf-md-archive_cancel_outline
+f174c
+nf-md-archive_check_outline
+f174e
+nf-md-archive_clock_outline
+f1750
+nf-md-archive_cog_outline
+f1752
+nf-md-archive_edit_outline
+f1754
+nf-md-archive_eye_outline
+f1756
+nf-md-archive_lock_open
+f1758
+nf-md-archive_lock_outline
+f175a
+nf-md-archive_marker_outline
+f175c
+nf-md-archive_minus_outline
+f175e
+nf-md-archive_music_outline
+f1760
+nf-md-archive_off_outline
+f1762
+nf-md-archive_plus_outline
+f1764
+nf-md-archive_refresh_outline
+f1766
+nf-md-archive_remove_outline
+f1768
+nf-md-archive_search_outline
+f176a
+nf-md-archive_settings_outline
+f176c
+nf-md-archive_star_outline
+f176e
+nf-md-archive_sync_outline
+f1770
+nf-md-archive_arrow_down_outline
+f125a
+nf-md-archive_arrow_up_outline
+f125c
+nf-md-archive_lock_open_outline
+f1759
+removed
+nf-mdi-archive
+f53b
+Removed Icons
+With Release v3.0.0 the Material Design Icons were updated and moved to a new codepoint range (reasons for that are in the release notes).
+They are still shown here for reference, but are missing in the actual fonts.
+To find for example the replacement for nf-mdi-altimeter enter just altimeter in the search box.
+Some icons have been dropped without replacement.
+
+
+Example Usages
+CSS
+
+@import "https://www.nerdfonts.com/assets/css/webfont.css"
+
+I really <i class="nf nf-fa-heart"></i> <i class="nf nf-custom-vim"></i>
+  
+
+I really
+
+Nerd Fonts & Web Site Created by Ryan L McIntyre
+Design by Tim O’Brien t413.com — SinglePaged theme — this site is open source
+Created in & with
+
+Cheat Sheet
+
+nf-md-arch
+f08c7
+nf-fa-archway
+ee20
+nf-linux-archlabs
+f31e
+nf-linux-archcraft
+f345
+nf-dev-archlinux
+e732
+nf-linux-archlinux
+f303
+nf-cod-archive
+ea98
+nf-fa-archive
+f187
+nf-md-archive
+f003c
+nf-oct-archive
+f411
+nf-fa-box_archive
+f187
+nf-md-archive_alert
+f14fd
+nf-md-archive_cancel
+f174b
+nf-md-archive_check
+f174d
+nf-md-archive_clock
+f174f
+nf-md-archive_cog
+f1751
+nf-md-archive_edit
+f1753
+nf-md-archive_eye
+f1755
+nf-md-archive_lock
+f1757
+nf-md-archive_marker
+f175b
+nf-md-archive_minus
+f175d
+nf-md-archive_music
+f175f
+nf-md-archive_off
+f1761
+nf-md-archive_outline
+f120e
+nf-md-archive_plus
+f1763
+nf-md-archive_refresh
+f1765
+nf-md-archive_remove
+f1767
+nf-md-archive_search
+f1769
+nf-md-archive_settings
+f176b
+nf-md-archive_star
+f176d
+nf-md-archive_sync
+f176f
+nf-fa-file_archive_o
+f1c6
+nf-md-archive_alert_outline
+f14fe
+nf-md-archive_arrow_down
+f1259
+nf-md-archive_arrow_up
+f125b
+nf-md-archive_cancel_outline
+f174c
+nf-md-archive_check_outline
+f174e
+nf-md-archive_clock_outline
+f1750
+nf-md-archive_cog_outline
+f1752
+nf-md-archive_edit_outline
+f1754
+nf-md-archive_eye_outline
+f1756
+nf-md-archive_lock_open
+f1758
+nf-md-archive_lock_outline
+f175a
+nf-md-archive_marker_outline
+f175c
+nf-md-archive_minus_outline
+f175e
+nf-md-archive_music_outline
+f1760
+nf-md-archive_off_outline
+f1762
+nf-md-archive_plus_outline
+f1764
+nf-md-archive_refresh_outline
+f1766
+nf-md-archive_remove_outline
+f1768
+nf-md-archive_search_outline
+f176a
+nf-md-archive_settings_outline
+f176c
+nf-md-archive_star_outline
+f176e
+nf-md-archive_sync_outline
+f1770
+nf-md-archive_arrow_down_outline
+f125a
+nf-md-archive_arrow_up_outline
+f125c
+nf-md-archive_lock_open_outline
+f1759
+removed
+nf-mdi-archive
+f53b
+Removed Icons
+With Release v3.0.0 the Material Design Icons were updated and moved to a new codepoint range (reasons for that are in the release notes).
+They are still shown here for reference, but are missing in the actual fonts.
+To find for example the replacement for nf-mdi-altimeter enter just altimeter in the search box.
+Some icons have been dropped without replacement.
+
+
+Example Usages
+CSS
+
+@import "https://www.nerdfonts.com/assets/css/webfont.css"
+
+I really <i class="nf nf-fa-heart"></i> <i class="nf nf-custom-vim"></i>
+  
+
+I really
+
+Nerd Fonts & Web Site Created by Ryan L McIntyre
+Design by Tim O’Brien t413.com — SinglePaged theme — this site is open source
+Created in & with
+
+Cheat Sheet
+
+nf-md-arch
+f08c7
+nf-fa-archway
+ee20
+nf-linux-archlabs
+f31e
+nf-linux-archcraft
+f345
+nf-dev-archlinux
+e732
+nf-linux-archlinux
+f303
+nf-cod-archive
+ea98
+nf-fa-archive
+f187
+nf-md-archive
+f003c
+nf-oct-archive
+f411
+nf-fa-box_archive
+f187
+nf-md-archive_alert
+f14fd
+nf-md-archive_cancel
+f174b
+nf-md-archive_check
+f174d
+nf-md-archive_clock
+f174f
+nf-md-archive_cog
+f1751
+nf-md-archive_edit
+f1753
+nf-md-archive_eye
+f1755
+nf-md-archive_lock
+f1757
+nf-md-archive_marker
+f175b
+nf-md-archive_minus
+f175d
+nf-md-archive_music
+f175f
+nf-md-archive_off
+f1761
+nf-md-archive_outline
+f120e
+nf-md-archive_plus
+f1763
+nf-md-archive_refresh
+f1765
+nf-md-archive_remove
+f1767
+nf-md-archive_search
+f1769
+nf-md-archive_settings
+f176b
+nf-md-archive_star
+f176d
+nf-md-archive_sync
+f176f
+nf-fa-file_archive_o
+f1c6
+nf-md-archive_alert_outline
+f14fe
+nf-md-archive_arrow_down
+f1259
+nf-md-archive_arrow_up
+f125b
+nf-md-archive_cancel_outline
+f174c
+nf-md-archive_check_outline
+f174e
+nf-md-archive_clock_outline
+f1750
+nf-md-archive_cog_outline
+f1752
+nf-md-archive_edit_outline
+f1754
+nf-md-archive_eye_outline
+f1756
+nf-md-archive_lock_open
+f1758
+nf-md-archive_lock_outline
+f175a
+nf-md-archive_marker_outline
+f175c
+nf-md-archive_minus_outline
+f175e
+nf-md-archive_music_outline
+f1760
+nf-md-archive_off_outline
+f1762
+nf-md-archive_plus_outline
+f1764
+nf-md-archive_refresh_outline
+f1766
+nf-md-archive_remove_outline
+f1768
+nf-md-archive_search_outline
+f176a
+nf-md-archive_settings_outline
+f176c
+nf-md-archive_star_outline
+f176e
+nf-md-archive_sync_outline
+f1770
+nf-md-archive_arrow_down_outline
+f125a
+nf-md-archive_arrow_up_outline
+f125c
+nf-md-archive_lock_open_outline
+f1759
+removed
+nf-mdi-archive
+f53b
+Removed Icons
+With Release v3.0.0 the Material Design Icons were updated and moved to a new codepoint range (reasons for that are in the release notes).
+They are still shown here for reference, but are missing in the actual fonts.
+To find for example the replacement for nf-mdi-altimeter enter just altimeter in the search box.
+Some icons have been dropped without replacement.
+
+
+Example Usages
+CSS
+
+@import "https://www.nerdfonts.com/assets/css/webfont.css"
+
+I really <i class="nf nf-fa-heart"></i> <i class="nf nf-custom-vim"></i>
+  
+
+I really
+
+Nerd Fonts & Web Site Created by Ryan L McIntyre
+Design by Tim O’Brien t413.com — SinglePaged theme — this site is open source
+Created in & with
+",
+    "on-click": "wlogout",
+    "tooltip": "Power Options"
+  },
+    
+   "mpd": {
+    "format": "{stateIcon} {title} ({artist})",
+    "format-paused": "⏸ {title} ({artist})",
+    "format-stopped": "Stopped",
+    "stateIcons": {
+        "playing": "▶",
+        "paused": "⏸",
+        "stopped": "⏹"
+    },
+    "on-click": "rmpc stop",
+    "on-click-right": "rmpc next",
+    "on-click-middle": "rmpc prev",
+    "interval": 1
+ }
+}

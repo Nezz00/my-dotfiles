@@ -24,11 +24,11 @@ window#waybar {
 }
 
 #workspaces button.active {
-    background-color: rgba(74, 31, 31, 0.9); /* Rojo oscuro */
+    background-color: rgba(222, 181, 223, 0.9); /* Rojo oscuro */
     color: #ffffff;
 }
 
-#clock, #cpu, #memory, #battery, #network, #tray, #bluetooth, #pulseaudio, #mpd, #custom-power  {
+#clock, #cpu, #memory, #battery, #network, #tray, #bluetooth, #pulseaudio, #mpd, #custom-power, #custom-launcher {
     background-color: rgba(42, 28, 61, 0.8); /* Morado oscuro */
     color: #ffffff;
     padding: 0 10px;
