@@ -1,0 +1,10 @@
+* {
+    background-color:            #0D0B10;
+    text-color:            #cdd6f4ff;
+    background-color-elements:            #B083F2;
+    main-ex:            #f5e0dcff;
+    select-bg:          #b4befeff;
+    active:          #0D0B10;
+    separatorcolor:     transparent;
+    border-color:       transparent;
+}

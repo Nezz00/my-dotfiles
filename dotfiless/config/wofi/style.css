@@ -1,9 +1,12 @@
-window {
+#window {
   background-color: #0D0B10;
   border: none;
   border-radius: 10px;
   padding: 8px;
   color: #D7CFFF;
+  background-image: url('~/Downloads/wallpapers/ala.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 #input {
