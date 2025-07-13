@@ -28,7 +28,7 @@ window#waybar {
     color: #ffffff;
 }
 
-#clock, #cpu, #memory, #battery, #network, #tray, #bluetooth, #pulseaudio, #mpd, #custom-power, #custom-launcher {
+#clock, #cpu, #memory, #battery, #network, #tray, #bluetooth, #pulseaudio, #mpd, #custom-power, #custom-launcher, #backlight {
     background-color: rgba(42, 28, 61, 0.8); /* Morado oscuro */
     color: #ffffff;
     padding: 0 10px;

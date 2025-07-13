@@ -4,7 +4,7 @@
   "position": "top",
   "modules-left": ["clock", "tray"],
   "modules-center": ["hyprland/workspaces"],
-  "modules-right": ["network", "pulseaudio", "battery", "custom/power", "custom/launcher"],
+  "modules-right": ["network", "pulseaudio", "backlight", "battery", "custom/power", "custom/launcher"],
 
   "hyprland/workspaces": {
     "format": "{icon}",
@@ -38,7 +38,8 @@
   },
 
   "network": {
-    "format-wifi": "󰤨 ({signalStrength}%)  {bandwidthDownBits} {bandwidthUpBytes} ",
+    "format-wifi": "{icon}({signalStrength}%)  {bandwidthDownBits} {bandwidthUpBytes} ",
+    "format-icons": ["󰤟 ", "󰤢 ", "󰤥 ", "󰤨 "],
     "format-ethernet": "󰈀  {ifname}",
     "format-disconnected": "󰤮 Desconectado",
     "on-click": "nm-connection-editor",
@@ -64,7 +65,13 @@
     "on-click": "wlogout",
     "tooltip": "Power Options"
   },
-    
+     
+  "backlight": {
+   "format": "{percent}½ {icon}",   
+   "format-icons": ["", "", "", "", "", "", "", "", ""] 
+
+  },
+
    "mpd": {
     "format": "󰒮 {stateIcon} {title} ({artist}) 󰒭",
     "format-disconnected": "Desconectado",
